@@ -1,0 +1,20 @@
+body > main#main-grid{
+    grid-area: main;
+}
+
+body > main#main-grid > div#experience-grid{
+    grid-area: menu-list;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+
+div#experience-grid{
+    display: grid;
+}
+
+

@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(211, 187, 233);
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+
+header{
+    text-align: center;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+img{
+    height: 200px;
+}

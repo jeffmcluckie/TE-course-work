@@ -1,0 +1,12 @@
+- **Selectors**
+
+  - universal
+  - element
+  - id
+  - class
+  - descendant combinator
+    - descendant selector (space)
+    - child selector (>)
+    - adjacent sibling selector (+)
+    - general sibling selector (~)
+  - pseudo-class (for example, `a:hover`)

@@ -1,0 +1,28 @@
+body {
+    background-color: #d8e5ed;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+    text-align: center;
+}
+
+/* descendant selector, choose the header, then the p inside of it */
+header p {
+    color : #808080;  
+}
+
+/* Apply a style to multiple elements by separating with a comma */
+h1, h2, h3, h4, h5, h6 {
+    color : #808080;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+img {
+    height: 200px;
+    /* Don't set both the width & the height on images
+       as it might stretch or alter the image */
+}

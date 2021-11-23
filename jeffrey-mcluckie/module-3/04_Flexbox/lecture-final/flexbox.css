@@ -1,0 +1,59 @@
+/* Set up all of these as flex containers */
+body, 
+#hero footer, 
+#featured section,
+#featured section article div,
+#all-items section,
+#all-items section article {
+    display: flex;
+}
+
+/* for these 2 containers, have the items form a column instead of the default row */
+body,
+#all-items section {
+    flex-direction: column;
+}
+
+body {
+    align-items: center;
+}
+
+#featured section article div {
+    justify-content: center;
+}
+
+#all-items section article {
+    justify-content: center;
+    align-items: center;
+}
+
+#hero footer {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#all-items article div:last-child {
+    flex-basis: 80%;
+}
+
+#all-items article:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* This does the same thing, but has more flexibility if there are multiple items 
+   and you don't just want to reverse it. */
+/* This rule/selector targets the div w/ the icon */  
+/* #all-items article:nth-child(even) div:first-child { */
+    /* move it to position 2 instead of it's default of 1 */ 
+/* order: 2;  */
+/* } */ 
+
+@media screen and (max-width: 1024px) {
+    #featured section {
+        flex-wrap: wrap;
+    }
+
+    #featured section article:nth-child(even) {
+        border: none;
+    }
+}

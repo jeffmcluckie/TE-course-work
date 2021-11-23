@@ -1,0 +1,43 @@
+Bug 1
+-----
+Test that demonstrates problem: getBillableHours_returns_correct_total
+
+Expected output: getBillableHours(2L, 2L) returns 0.0
+
+Actual output: getBillableHours(2L, 2L); 2.0
+
+How did you fix this bug?
+Added boolean for billable into method arguments in dao and interface. Inserted these into test cases as well.
+
+Bug 2
+-----
+Test that demonstrates problem: getTimesheetsByEmployeeId_returns_list_of_all_timesheets_for_employee
+
+Expected output: list size
+
+Actual output: list size - 1
+
+How did you fix this bug?
+if statement used instead of while loop, fixed this
+it now returns 3 for case 1L because i created another timesheet for this in testing
+Bug 3
+-----
+Test that demonstrates problem: getTimesheetsByProjectId_returns_list_of_all_timesheets_for_project
+
+Expected output: list size
+
+Actual output: list size - 1
+
+How did you fix this bug?
+employee_id was prompted for rather than project_id in the sql statement, fixed this
+
+Bug 4
+-----
+Test that demonstrates problem: deleted_timesheet_cant_be_retrieved
+
+Expected output: 0
+
+Actual output: 1
+
+How did you fix this bug?
+This one magically started working. Ill see what happened tomorrow.

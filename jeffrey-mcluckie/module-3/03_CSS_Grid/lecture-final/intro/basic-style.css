@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    grid-auto-rows: minmax(300px, auto);
+    /* This would position all items the same way */
+    justify-items: center;
+}
+
+div {
+    text-align: center;
+    /* margin: 5px; */
+    background-color: gray;
+    border: 2px solid black;
+    width: 50px;
+
+    /* control position of each item individually within the grid */
+    /* justify-self: center;
+    align-self: center; */
+}
+
+.bigger {
+    height: 200px;
+    /* put big items on left */
+    /* justify-self: start; */
+}
+
+.smaller {
+    height: 100px;
+    /* put smaller items on right */
+    /* justify-self: end; */
+}
+
+.giant {
+    height: 400px;
+}

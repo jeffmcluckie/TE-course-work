@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Colors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Favorite Colors</h1></header>
+    <main>
+        <h2>Add New Data</h2>
+        <form>
+            <label for="first-name">Name:</label>
+            <input id = "first-name" type = "text" />
+            <label for="color">Color:</label>
+            <input id = "color" type = "text" />
+            <label for="items">Number Of Items:</label>
+            <input id = "items" type = "number" />
+            <button id = "btn-add" type = "submit">Save:</button>
+        </form>
+        <h2>Colors</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Favorite Color</th>
+                    <th>Items</th>
+                </tr>
+            </thead>
+            <tbody id = 'color-data'>
+                <!-- colors will go here -->
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        &copy; 2021 Java Green Main (TE)
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
