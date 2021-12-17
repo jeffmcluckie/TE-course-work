@@ -1,12 +1,149 @@
-body {
-    background-color: #d8e5ed;
-    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
-}
 
 header {
-    text-align: center;
+    grid-area: header;
 }
 
-section {
-    font-style: italic;
+#logo {
+   font-size: 16; 
+}
+
+#create {
+    font-size: 16;
+}
+
+#user-tools {
+   font-size: 16;
+}
+
+#search {
+    font-size: 16;
+}
+
+body {
+    font-size: 16;
+}
+
+#banner {
+    grid-area: banner;
+}
+
+#forums {
+    grid-area: forums;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-forums {
+    font-size: 16;
+}
+
+#top5 {
+   font-size: 16;
+}
+
+#create-forum {
+    display: flex;
+}
+
+#cf {
+    font-size: 16;
+}
+
+#search-forums {
+    font-size: 16;
+}
+
+#posts {
+    grid-area: posts;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-posts {
+    font-size: 16;
+}
+
+#top10 {
+    font-size: 16;
+    flex-grow: 5;
+}
+
+#create-post {
+    display:flex;
+}
+
+#cp {
+    font-size: 16;
+}
+
+#search-posts{
+    font-size: 16;
+}
+
+#my-forums {
+    grid-area: my-forums;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-posts{
+    grid-area: my-posts;
+    display: flex;
+    flex-direction: column;
+}
+
+#upper-left {
+    grid-area: upper-left;
+    display: flex;
+}
+
+#upper-right {
+    grid-area: upper-right;
+    display: flex;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+}
+
+main {
+    grid-area: main;
+}
+
+
+@media screen and (min-width: 1025px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        align-items: center;
+        grid-template-areas: 
+        "upper-left . upper-right"
+        "main main main";
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        align-items: center;
+        grid-template-areas: 
+            "banner banner banner"
+            "forums posts my-forums"
+            "forums posts my-posts"
+            "footer footer footer";
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        align-items: center;
+        grid-template-areas: 
+            "footer footer footer";
+    }
 }
